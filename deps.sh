@@ -1,1 +1,1 @@
-sudo apt-get install build-essential nasm
+sudo apt-get install build-essential nasm genisoimage
