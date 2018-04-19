@@ -19,5 +19,5 @@ exos.flp : mikeos.flp exos.bin
 	dd status=noxfer conv=notrunc if=exos.bin of=exos.flp
 
 clean :
-	rm exos.bin exos.iso
+	rm -f exos.bin exos.iso exos.flp
 	rm -rf exos_iso
