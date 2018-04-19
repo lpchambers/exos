@@ -1,9 +1,15 @@
 ASM=nasm
 
-.PHONY: clean iso
+.PHONY: clean iso help
 
 exos.bin : exos.asm
 	nasm -f bin -o exos.bin exos.asm
+
+help :
+	@echo Makefile for exos
+	@echo "  make       - create the binary"
+	@echo "  make iso   - create the iso file"
+	@echo "  make clean - clean the repo"
 
 iso : exos.iso
 
